@@ -69,7 +69,10 @@
     <!--tr = Linha da tabela (table row)-->
     <!--td = Dados da tabela (table data)-->
     <!--th = Cabeçario da tabela (table header)-->
-    <table border="1">
+    <!--rowspan-->
+    <!--coldspan-->
+   
+    <table border="2">
         <tr>
             <th>
                 Nome
@@ -126,9 +129,70 @@
                 45 anos
             </td>
         </tr>
-       
+        <tr>
+            <td>
+                Total
+            </td>
+            <td colspan="3">
+                3 pessoas
+            </td>
+        </tr>
     </table>
     <hr>
+    <h1>Formulário</h1>
+    
+    <!--Input Text = recebe um texto-->
+    <!--Input Password = recebe uma senha-->
+    <!--input Submmit = envia alguma informação-->
+    <h3>Login   </h3>
+    <form action="">
+
+    Login: <br>
+    <input type="text" name="login"> <br>
+    Senha: <br> 
+    <input type="password" name="senha"> <br>
+    <br>
+    <input type="submit" value="Logar">
+
+    </form>
+
+    <form>
+        <!--Input radio = escolha entre uma opção ou outra-->
+        <!--Input checkbox = múltiplas ou uma única escolha-->
+        <!--Select = Seleção de escolhas-->
+        <!--textarea = área para digitar um texto-->
+        <h3>Cadastre-se</h3>
+
+        Login: <br>
+        <input type="text" name="login"> <br>
+
+        Sexo: <br>
+        <input type="radio" name="sexo" value="M"> Masculino
+        <input type="radio" name="sexo" value="F"> Feminino
+        <br>
+
+        Interesses: <br>
+        <input type="checkbox" name="Interesses">Matemática<br>
+        <input type="checkbox" name="Interesses">Física<br>
+        <input type="checkbox" name="Interesses">Língua Portuguesa<br>
+        <br>
+        Estado:
+        <select name="Estado">
+            <option value="ro">RO</option>
+            <option value="pb">PB</option>
+            <option value="pe">PE</option>
+            <option value="sc">SC</option>
+            <option value="sp">SP</option>
+        </select>
+        <br><br>
+        Observação: <br>
+        <textarea name="Observação"></textarea>
+
+        <input type="submit" value="Cadastrar">
+
+    </form>
+    <hr>
+
     <h3>Informações do Programador</h3>
     <p>Nome: Arthur Rodrigues Braga</p>
     <p>Idade: 16 anos (por enquanto)</p>
